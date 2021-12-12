@@ -1,0 +1,60 @@
+Abstract
+Prblm Statement
+Analysis
+Scenarios
+	Normal
+		- Student Registration and Login
+		- Query Events
+		- Payment Mode
+		- Students participated will recieve participation Certificate
+		- Security Check for Students
+	Exceptional
+		- Max 3 attempts for Student Login
+		- Both the events at same time calls for alternate option/Only 1 event
+		- Volunteers cannot be participants
+		- Problem with the registration contact Event manager
+		- An Event can have max of 50 students
+		- If registration failed or Cancelled then On-spot registration available for Vacant Seats
+Requirements
+	Hardware Req.
+		HDD - 128GB
+		RAM - 1GB
+	Software Req.
+		VSCode
+		SQlite	
+	Functional
+		* Student should be able to register
+		* Registered Student can attend to Events
+		* Event Manager can manage all the events and inform Event Info.
+		* Volunteers can Set-up the events
+		* The students should be in the college at the provided timings
+		* Event Manager checks that the students have registered
+		* Students can approach Volunteers for password reset and Forgotten Password
+	Non-functional
+		Functional - 
+		Usability - Displays College Fest Details and timings, 
+		Reliabilty - Max 3 retries and if >3 then display error message 
+		Performance - The data should be fetched within 3 sec.
+		Supportabilty - Can be upgraded to GUI
+	Constraints
+		Implementation - Java
+		Legal - Abiding to all SOP Rules 
+Use Cases
+	Use Cases 
+		+ Register and Login
+		+ Manages Volunteers
+		+ Reset Password
+		+ Manage Account
+		+ Manage Events
+-----------------------------------------------------------------------------------------------
+	Use case name : Register and  Login
+	Participating actors : Initiated by -> Student, Communicates with -> Database
+	Flow of events : 1. Student enters usn, name , phone_no, email_id and password and Selects Register
+			 2. Student login with registered email_id and password
+	Entry condition : Student hasn't registered yet
+	Exit conditions : Student successfully looged in
+-----------------------------------------------------------------------------------------------
+	Set of Actors - Admin, Users, Volunteers, Students, Event Managers 
+	Description
+	Use Case Diagram 
+	
